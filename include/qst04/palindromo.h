@@ -6,6 +6,9 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-bool pali(char* palavra, int inicio, int fim); 
+#include <cstring>
+using std::string;
+
+bool verificarPalindromo(string palavra, int inicio, int fim);
 
 #endif
