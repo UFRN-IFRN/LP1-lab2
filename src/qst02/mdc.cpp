@@ -5,6 +5,6 @@ int mdc(int m, int n){
 	if (resto == 0){
 		return n;
 	} else {
-		mdc(m, m/n);
+		return mdc(m, resto);
 	}
 }

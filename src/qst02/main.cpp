@@ -1,11 +1,10 @@
 #include "../../include/qst02/mdc.h"
 
 int main(){
-	int n, m;
+	int m, n;
 
 	cout << "Digite dois números naturais positivos: " << endl;
-	cin >> m;
-	cin >> n;
+	cin >> m >> n;
 
 	cout << "MDC(" << m << ", " << n << ") = " << mdc(m, n) << endl;
 
