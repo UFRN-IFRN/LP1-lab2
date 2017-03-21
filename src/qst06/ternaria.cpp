@@ -1,1 +1,1 @@
-#include "ternaria.h"
+#include "../../include/qst06/ternaria.h"

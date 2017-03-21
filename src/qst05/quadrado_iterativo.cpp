@@ -1,1 +1,5 @@
-#include "quadrado_iterativo.h"
+#include "../../include/qst05/quadrado_iterativo.h"
+
+void calcularQuadradoIterativo(int n){
+	
+}

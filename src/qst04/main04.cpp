@@ -5,7 +5,7 @@ int main(){
 	string palavra;
 
 	cout << "Digite uma palavra: " << endl;
-	cin >> palavra;
+	getline(cin, palavra);
 
 	int tam = palavra.length();
 	

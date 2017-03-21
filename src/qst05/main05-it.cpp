@@ -1,0 +1,1 @@
+#include "../../include/qst05/quadrado_iterativo.h"
