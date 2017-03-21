@@ -6,7 +6,7 @@
  * @date	20/03/2017
  */
 
- #ifndef MDC_H
+#ifndef MDC_H
 #define MDC_H
 
 #include <iostream>
