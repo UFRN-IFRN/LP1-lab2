@@ -1,12 +1,9 @@
 #include "../../include/qst03/dec2bin.h"
 
-void dec2Bin(int dec) {
-		
-	if (dec == 1) {
-		cout << dec;
-	} else {
-		dec2Bin(dec/2);
-		//cout << dec%2;
+int converterDec2Bin(int dec){
+    if (dec >= 2){
+        return (10 * converterDec2Bin(dec / 2) + dec % 2); 
+    } else {
+	    return dec;
 	}
-	
 }

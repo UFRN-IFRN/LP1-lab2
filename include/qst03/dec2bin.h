@@ -6,6 +6,6 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void dec2Bin(int dec);
+int converterDec2Bin(int dec);
 
 #endif
