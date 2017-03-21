@@ -1,5 +1,16 @@
+/**
+ * @file	main04.cpp
+ * @brief	Código fonte do programa
+ * @author	Bianca Santiago (bianca.santiago72@gmail.com)
+ * @since	18/03/2017
+ * @date	20/03/2017
+ */
+
 #include "../../include/qst04/palindromo.h"
 
+/**
+*@brief Função principal que recebe os parâmetros pelo terminal
+*/
 int main(){
 
 	string palavra;
