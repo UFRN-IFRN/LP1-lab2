@@ -1,37 +1,39 @@
 #include "../../include/qst01/sequencia.h"
 
-#include <iostream>
-
-double seqA_rc(int n){
+float sequenciaARecursiva(float n){
 	if(n == 1) {
 		return 1;	
 	} else {
-		return 1/n + seqA_rc(n-1);
+		return 1/n + sequenciaARecursiva(n-1);
 	}
 
 }
 
-double seqB_rc(int n) {
-	if(n == 1) {
-		return 2/4;	
-	} else {
-		return (((n*n)+1)/(n+3)) + seqA_rc(n-1);
-	}
-}
-
-double seqA_it(int n){
-	double soma = 0;
-	for(int i=1; i<=n; ++i){
-		soma += 1/n;
+float sequenciaAIterativa(float n){
+	float soma = 0;
+	
+	for(float i = 1; i <= n; ++i){
+		soma += 1/i;
 	}
 
 	return soma;
 }
 
-double seqB_it(int n){
-	double soma = 0;
-	for (int i=1; i<=n; ++i){
-		soma += ((n*n)+1)/(n+3);
+float sequenciaBRecursiva(float n){
+	if(n == 0) {
+		return 0;	
+	} else {
+		return ((pow(n, 2) + 1) / (n + 3)) + sequenciaBRecursiva(n-1);
+	}
+}
+
+float sequenciaBIterativa(float n){
+
+	float soma = 0, aux = 1;
+	
+	for (float i =1; i <= n; ++i){
+		soma += (pow(aux, 2) + 1) / (i + 3);
+		aux++;
 	}
 
 	return soma;
