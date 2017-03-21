@@ -1,6 +1,6 @@
 /**
  * @file	sequencia.h
- * @brief	Codigo fonte com a implementacao de funcoes que calculam as 
+ * @brief	Arquivo cabeçalho com a implementacao de funcoes que calculam as 
  			sequências descritas no laboratório
  * @author	Bianca Santiago (bianca.santiago72@gmail.com)
  * @since	18/03/2017
