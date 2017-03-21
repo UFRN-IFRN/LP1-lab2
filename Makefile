@@ -78,6 +78,45 @@ $(OBJ_DIR)/main4.o: $(SRC_DIR)/qst04/main04.cpp
 $(OBJ_DIR)/palindromo.o: $(SRC_DIR)/qst04/palindromo.cpp $(INC_DIR)/qst04/palindromo.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
+# Alvo para a construcao do executavel qst05 (iterartivo):
+palindromo: $(OBJ_DIR)/main05-it.o $(OBJ_DIR)/quadrado_iterativo.o
+
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
+
+# Alvo para a construcao do objeto main05-it.o:
+$(OBJ_DIR)/main4.o: $(SRC_DIR)/qst05/main05-it.cpp
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+# Alvo para a construcao do objeto quadrado_iterativo.o:
+$(OBJ_DIR)/palindromo.o: $(SRC_DIR)/qst05/quadrado_iterativo.cpp $(INC_DIR)/qst05/quadrado_iterativo.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+# Alvo para a construcao do executavel qst05 (recursivo):
+palindromo: $(OBJ_DIR)/main05-rc.o $(OBJ_DIR)/quadrado_recursivo.o
+
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
+
+# Alvo para a construcao do objeto main05-rc.o:
+$(OBJ_DIR)/main4.o: $(SRC_DIR)/qst05/main05-rc.cpp
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+# Alvo para a construcao do objeto quadrado_recursivo.o:
+$(OBJ_DIR)/palindromo.o: $(SRC_DIR)/qst05/quadrado_recursivo.cpp $(INC_DIR)/qst05/quadrado_recursivo.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+# Alvo para a construcao do executavel qst06:
+palindromo: $(OBJ_DIR)/main06.o $(OBJ_DIR)/ternaria.o
+
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
+
+# Alvo para a construcao do objeto main06.o:
+$(OBJ_DIR)/main4.o: $(SRC_DIR)/qst06/main06.cpp
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+# Alvo para a construcao do objeto ternaria.o:
+$(OBJ_DIR)/palindromo.o: $(SRC_DIR)/qst06/ternaria.cpp $(INC_DIR)/qst06/ternaria.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
 # Alvo para a geração automatica de documentacao usando o Doxygen:
 doxy:
 	$(RM) $(DOC_DIR)/*
